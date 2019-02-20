@@ -51,17 +51,6 @@ public class MainTeleOpMode extends OpMode {
         leftJoyStick = -gamepad1.left_stick_y;
         rightJoyStick = -gamepad1.right_stick_x;
 
-
-        //This is for limiting the speed of movement motors
-//        if (gamepad1.a && !gamepad1.y){
-//            motorMovementMin = -0.85;
-//            motorMovementMax = 0.85;
-//
-//        }else if (gamepad1.y && !gamepad1.a){
-//            motorMovementMin = -0.35;
-//            motorMovementMax = 0.35;
-//        }
-        // Code for GamePad2 (Drive Base)
         motorMovementMin = -0.85;
         motorMovementMax = 0.85;
 
@@ -117,9 +106,6 @@ public class MainTeleOpMode extends OpMode {
             robot.lockMotor.setPower(-1);
             robot.lockMotor.setTargetPosition(10);
         }
-
-
-
 
         //Telemetry is not used to control the robot, it is purely to help debug by showing
         //Information on the phone
